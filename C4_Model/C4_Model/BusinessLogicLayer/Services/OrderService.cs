@@ -10,14 +10,13 @@ using System.Threading.Tasks;
 
 namespace C4_Model.Services
 {
-    public class OrderService
+    public class OrderService: IOrdersService
     {
-        public class OrdersService : IOrdersService
-        {
+        
             private ILibraryRepository _libraryRepository;
             private IMapper _mapper;
-        }
-        public OrdersService(ILibraryRepository libraryRepository, IMapper _mapper)
+        
+        public OrderService(ILibraryRepository libraryRepository, IMapper _mapper)
         {
             this._libraryRepository = libraryRepository;
             this._mapper = _mapper;
@@ -29,13 +28,13 @@ namespace C4_Model.Services
             var modelList = _mapper.Map<IEnumerable<OrderModel>>(entityList);
             return modelList;
         }
-        public OrderModel GetTicket(int OrderId)
+        public OrderModel GetOrder(int OrderId)
         {
-            var Ticket = _libraryRepository.GetOrder(OrderId);
+            var Order = _libraryRepository.GetOrder(OrderId);
 
-            if (Ticket == null)
+            if (Order == null)
             {
-                throw new NotFoundException($"The Ticket {OrderId} doesnt exists, try it with a new id");
+                throw new NotFoundException($"The Order {OrderId} doesnt exists, try it with a new id");
             }
 
             return _mapper.Map<OrderModel>(Order);
@@ -44,7 +43,7 @@ namespace C4_Model.Services
         public OrderModel CreateOrder(OrderModel OrderModel)
         {
 
-            var entityreturned = _libraryRepository.CreateTicket(_mapper.Map<OrderEntity>(OrderModel));
+            var entityreturned = _libraryRepository.CreateOrder(_mapper.Map<OrderEntity>(OrderModel));
 
             return _mapper.Map<OrderModel>(entityreturned);
         }
@@ -55,10 +54,10 @@ namespace C4_Model.Services
             return _libraryRepository.DeleteOrder(OrderId);
         }
 
-        public OrderModel UpdateTicket(int OrderId, OrderModel OrderModel)
+        public OrderModel UpdateOrder(int OrderId, OrderModel OrderModel)
         {
 
-            var OrderToUpdate = _libraryRepository.UpdateTicket(_mapper.Map<OrderEntity>(OrderModel));
+            var OrderToUpdate = _libraryRepository.UpdateOrder(_mapper.Map<OrderEntity>(OrderModel));
 
             return _mapper.Map<OrderModel>(OrderToUpdate);
         }

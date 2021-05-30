@@ -1,13 +1,11 @@
 ﻿<Properties StartupConfiguration="{97CC737F-F2C3-44A9-AD1D-E6CEE0E5437D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="C4_Model/DataAccessLayer/Data/Repository/ILibraryRepository.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="C4_Model/REST Layer/Controllers/OrdersController.cs">
     <Files>
-      <File FileName="C4_Model/REST Layer/Exceptions/BadRequestException.cs" />
-      <File FileName="C4_Model/REST Layer/Exceptions/NotFoundException.cs" Line="14" Column="2" />
-      <File FileName="C4_Model/BusinessLogicLayer/Models/OrderModel.cs" Line="11" Column="3" />
-      <File FileName="C4_Model/BusinessLogicLayer/Services/IOrdersService.cs" Line="17" Column="1" />
-      <File FileName="C4_Model/BusinessLogicLayer/Services/OrderService.cs" Line="66" Column="2" />
-      <File FileName="C4_Model/DataAccessLayer/Data/Entities/OrdersEntity.cs" Line="17" Column="1" />
-      <File FileName="C4_Model/DataAccessLayer/Data/Repository/ILibraryRepository.cs" Line="5" Column="1" />
+      <File FileName="C4_Model/DataAccessLayer/Data/Repository/ILibraryRepository.cs" Line="6" Column="1" />
+      <File FileName="C4_Model/BusinessLogicLayer/Services/IOrdersService.cs" Line="1" Column="1" />
+      <File FileName="C4_Model/BusinessLogicLayer/Services/OrderService.cs" Line="1" Column="1" />
+      <File FileName="C4_Model/DataAccessLayer/Data/Repository/LibraryRepository.cs" Line="1" Column="1" />
+      <File FileName="C4_Model/REST Layer/Controllers/OrdersController.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,15 +14,19 @@
             <Node name="C4_Model" expanded="True">
               <Node name="BusinessLogicLayer" expanded="True">
                 <Node name="Models" expanded="True" />
+                <Node name="Services" expanded="True" />
               </Node>
               <Node name="DataAccessLayer" expanded="True">
                 <Node name="Data" expanded="True">
-                  <Node name="Repository" expanded="True">
-                    <Node name="ILibraryRepository.cs" selected="True" />
-                  </Node>
+                  <Node name="Repository" expanded="True" />
                 </Node>
               </Node>
-              <Node name="REST Layer" expanded="True" />
+              <Node name="REST Layer" expanded="True">
+                <Node name="Controllers" expanded="True">
+                  <Node name="OrdersController.cs" selected="True" />
+                </Node>
+                <Node name="Exceptions" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
@@ -33,7 +35,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.C4__Model FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.ItemProperties.C4__Model PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
