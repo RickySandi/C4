@@ -1,12 +1,5 @@
 ﻿<Properties StartupConfiguration="{97CC737F-F2C3-44A9-AD1D-E6CEE0E5437D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="C4_Model/REST Layer/Controllers/OrdersController.cs">
-    <Files>
-      <File FileName="C4_Model/DataAccessLayer/Data/Repository/ILibraryRepository.cs" Line="6" Column="1" />
-      <File FileName="C4_Model/BusinessLogicLayer/Services/IOrdersService.cs" Line="1" Column="1" />
-      <File FileName="C4_Model/BusinessLogicLayer/Services/OrderService.cs" Line="1" Column="1" />
-      <File FileName="C4_Model/DataAccessLayer/Data/Repository/LibraryRepository.cs" Line="1" Column="1" />
-      <File FileName="C4_Model/REST Layer/Controllers/OrdersController.cs" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
